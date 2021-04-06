@@ -1,0 +1,19 @@
+.game
+{
+	display: flex;
+	border: solid 1px black;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-color: lightgray;
+}
+#flappybird
+{
+	margin: auto;
+	width: 288px;
+	height: 512px;
+	border: solid 1px black;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	background-color: white;
+}
