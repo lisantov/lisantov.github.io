@@ -36,7 +36,7 @@ let imageFolder = "imgs/";
 
 	let pipe = [];
 	pipe[0] = {
-		x : canvas.width,
+		x : canvas.width + 10,
 		y : -100
 	}
 
@@ -99,9 +99,9 @@ function flappyBird()
 			}	
 
 			if(birdX + imgBird.width >= pipe[i].x
-				&& birdX <= pipe[i].x + imgPipeTop.width
-				&& (birdY <= pipe[i].y + imgPipeTop.height
-				|| birdY + imgBird.height >= pipe[i].y + imgPipeTop.height + windowHeight))
+				&& birdX <= pipe[i].x + imgPipeTop.width + 50
+				&& (birdY <= pipe[i].y + imgPipeTop.height + 50
+				|| birdY + imgBird.height >= pipe[i].y + imgPipeTop.height + windowHeight + 50))
 				{
 					init();
 					soundHit.play();
