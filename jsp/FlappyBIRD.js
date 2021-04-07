@@ -88,7 +88,7 @@ function flappyBird()
 			init();
 		for(let i = 0; i < pipe.length; i++)		
 		{
-			pipe[i].x -= 3;
+			pipe[i].x -= 2;
 			if(pipe[i].x == 75)
 			{
 
@@ -99,9 +99,9 @@ function flappyBird()
 			}	
 
 			if(birdX + imgBird.width >= pipe[i].x
-				&& birdX <= pipe[i].x + imgPipeTop.width + 50
-				&& (birdY <= pipe[i].y + imgPipeTop.height + 50
-				|| birdY + imgBird.height >= pipe[i].y + imgPipeTop.height + windowHeight + 50))
+				&& birdX <= pipe[i].x + imgPipeTop.width
+				&& (birdY <= pipe[i].y + imgPipeTop.height
+				|| birdY + imgBird.height >= pipe[i].y + imgPipeTop.height + windowHeight))
 				{
 					init();
 					soundHit.play();
