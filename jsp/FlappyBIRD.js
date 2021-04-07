@@ -88,7 +88,7 @@ function flappyBird()
 			init();
 		for(let i = 0; i < pipe.length; i++)		
 		{
-			pipe[i].x--;
+			pipe[i].x -= 3;
 			if(pipe[i].x == 75)
 			{
 
