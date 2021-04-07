@@ -88,7 +88,7 @@ function flappyBird()
 			init();
 		for(let i = 0; i < pipe.length; i++)		
 		{
-			pipe[i].x -= 2;
+			pipe[i].x -= 3;
 			if(pipe[i].x == 75)
 			{
 
@@ -126,7 +126,7 @@ function moveUp()
 	if(gameOver === true)
 		gameOver = false;
 
-	speed = -4;
+	speed = -3;
 	soundBird.play()
 }
 
